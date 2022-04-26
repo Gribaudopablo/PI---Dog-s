@@ -57,12 +57,12 @@ dogs.post('/dogs', async (req, res) => {
              life_span: life_span,
             image: image || 'https://dog.ceo/api/breeds/image/random',
         });
-        // temperament.map(async el => {
-        //     const findTemp = await Temperament.findAll({
-        //         where: { name: el }
-        //     });
-        //     createDog.addTemperament(findTemp);
-        // })
+        temperament.map(async el => {
+            const findTemp = await Temperament.findAll({
+                where: { name: el }
+            });
+            createDog.addTemperament(findTemp);
+        })
          res.status(200).send(createDog);
     } else {
         res.status(404).send('Data needed to proceed is missing');
