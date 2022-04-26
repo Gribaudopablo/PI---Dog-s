@@ -1,52 +1,39 @@
 import { Fragment } from "react";
 import NavBar from "../NavBar/NavBar";
 import styles from "./About.module.css";
-// import myPhoto from "../../assets/1631890619659.jpg";
+
 
 export default function About() {
   return (
     <Fragment>
       <NavBar />
       <div className={styles.mainConteinerAbout}>
-        <div className={styles.imageDiv}>
-          {/* <img src={myPhoto} alt="A man at the Ocean edge" /> */}
-        </div>
-        <h6>Developed by: Guillermo Andrada</h6>
+        <h6>Developed by: Pablo Gribaudo</h6>
         <h6>
           Full Stack Developer | JavaScript
         </h6>
         <br />
         <p>
-          I’m a Full Stack JavaScript developer who’s in love with coding
-          and computer systems.
+        I am a future javascript web developer, passionate about code.
         </p>
         <br />
         <p>
-          I started learning code in the 2020, with a National Program of
-          capacitation promoted by CESSI (Cámara de la Industria Argentina del
-          Software). There, I have learnt a bunch about coding and development.
+          I started learning code in 2021, before I was dedicated to the gastronomy area. In the not too distant future I would like to teach and dedicate my life to programming
         </p>
         <br />
-        <p>Skills: CSS, HTML, PHP, JavaScript, SQL, React.js, Vue.js, Redux, Sequelize, Express.</p>
+        <p>Skills: CSS, HTML, JavaScript, SQL, React.js, Redux, Sequelize, Express.</p>
         <br />
-        <p>I define myself as lifetime learner.</p>
-
-        <p>Soft skills: reliable, respectful and problem-solving oriented.</p>
-        <p>If you have a project I can help with, please get in touch.</p>
         <br />
         <div className={styles.links}>
-          <h6>Contact me:</h6>
+          <h6>Contact :</h6>
           <div className={styles.linksItems}>
             <p>
-              <a href="https://github.com/GuilloSGit" target='_blank' rel="noreferrer">GitHub</a>
+              <a href="https://github.com/Gribaudopablo/" target='_blank' rel="noreferrer">GitHub</a>
             </p>
             <p>
-              <a href="https://www.linkedin.com/in/guillermo-david-andrada/" target='_blank' rel="noreferrer">
+              <a href="https://www.linkedin.com/in/pablo-gribaudo-b2ab29185/" target='_blank' rel="noreferrer">
                 LinkedIn
               </a>
-            </p>
-            <p>
-              <a href="http://www.g-andrada.ga" target='_blank' rel="noreferrer">My Website</a>
             </p>
             </div>
         </div>

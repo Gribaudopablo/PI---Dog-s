@@ -194,11 +194,11 @@ export default function SideBar() {
           </select>
         </div>
         <div className={styles.filterSection}>
-          <h5 className={styles.filterHeader}>Add a dog</h5>
+          <h5 className={styles.filterHeader}>ADD a dog</h5>
           <div className={styles.addDog}>
             <Link to="/newDog/" className={styles.tooltip}>
-              <span className="material-icons">add</span>
-              <span className={styles.tooltiptext}>Add your Woof 🐕🐕🐕🐕</span>
+              <span className="material-icons">ADD</span>
+              <span className={styles.tooltiptext}>🔧</span>
             </Link>
           </div>
         </div>

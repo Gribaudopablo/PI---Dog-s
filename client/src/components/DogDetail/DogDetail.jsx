@@ -28,42 +28,19 @@ export default function DogDetail(props) {
             <div className={styles.detailsContainer}>
               {myDog.breed_group ? (
                 <div className={styles.breed_group}>
-                  <div className={styles.imageSection}>
-                    {/* <img
-                      src={tinyDog}
-                      alt="a tiny svg dog"
-                      className={styles.detailsSVG}
-                    /> */}
-                  </div>
                   <div className={styles.infoSection}>
                     <h3>Breed group: </h3>
                     <p>{myDog.breed_group}</p>
                   </div>
                 </div>
-              ) : (
-                ""
-              )}
+              ) : ( "" )}
               <div className={styles.life_span}>
-                <div className={styles.imageSection}>
-                  {/* <img
-                    src={heart}
-                    alt="a tiny svg dog"
-                    className={styles.detailsSVG}
-                  /> */}
-                </div>
                 <div className={styles.infoSection}>
                   <h3>Life span: </h3>
                   <p>{myDog.life_span}</p>
                 </div>
               </div>
               <div className={styles.weights}>
-                <div className={styles.imageSection}>
-                  {/* <img
-                    src={scale}
-                    alt="a tiny svg dog"
-                    className={styles.detailsSVG}
-                  /> */}
-                </div>
                 <div className={styles.infoSection}>
                   <h3>Weight: </h3>
                   <p>Min: {myDog.weight_min}</p>

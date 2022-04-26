@@ -27,9 +27,9 @@ export default function DogArea() {
      <div className={styles.dogsArea}>
         <Pagination
           dogsPerPage={dogsPerPage}
-          allDogs={allDogs.length}
           pagination={pagination}
           currentPage={currentPage}
+          allDogs={allDogs.length}
         />
         <div className={styles.pagination}></div>
         {

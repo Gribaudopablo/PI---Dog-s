@@ -39,11 +39,11 @@
 
 .tooltip .tooltiptext {
   font-size: 18px;
-  top: -05px;
-  left: 120%;
+  top: 5px;
+  /* left: 120%; */
   visibility: hidden;
   width: 120px;
-  background-color: wheat;
+  background-color: #1a3813c5;
   color: #fff;
   text-align: center;
   border-radius: 6px;

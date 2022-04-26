@@ -5,6 +5,8 @@
 }
 
 .mainContainer {
+  position: relative;
+  left: 100px;
   margin-top: 2%;
   width: 80%;
   height: 100%;
@@ -12,10 +14,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(1, 53, 5);
+  background-color: wheat;
   box-shadow: 6px 7px 8px -6px rgba(69, 69, 69, 0.7);
   border-radius: 15px;
-  color: white;
+  color:#1a3813c5;
 }
 
 .mainTitle {
