@@ -44,12 +44,19 @@ function rootReducer(state = initialState, action) {
             }
         case 'FILTER_CREATED':
             const createdFilter = action.payload === 'created' ?
-                state.dogs.filter(el => el.createdInDB === true) :
+                state.dogs.filter(el => el.createdInDB) :
                 state.dogs.filter(el => !el.createdInDB);
             return {
                 ...state,
-                allDogs: createdFilter,
+                allDogs: action.payload === 'all' ? state.dogs : createdFilter
             }
+            // case "FILTER_BY_ORIGEN":
+            //     const origen = action.payload === "Created" ? state.videogame.filter(el => el.createdInDatabase) : state.videogame.filter(el => !el.createdInDatabase)
+            //     return {
+            //         ...state,
+            //         videogames: action.payload === "All" ? state.videogame : origen
+            //     }  
+            // videogames: action.payload === "All" ? state.videogame : origen
         case 'ORDER_BY_NAME':
             const sortedArr = action.payload === 'asc' ?
                 [...state.dogs].sort(function (a, b) {
@@ -116,6 +123,11 @@ function rootReducer(state = initialState, action) {
                 ...state,
                 details: []
             }
+            case 'SET_DETAILS' :
+                return{
+                    ...state,
+                    details: action.payload
+                }
         default:
             return state
     }

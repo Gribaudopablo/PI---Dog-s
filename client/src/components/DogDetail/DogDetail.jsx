@@ -1,12 +1,8 @@
 import React, { Fragment, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteDetails, getDetails } from "../../redux/actions/index";
+import { deleteDetails, getDetails, setDetailS } from "../../redux/actions/index";
 import styles from "./DogDetail.module.css";
-// import tinyDog from "../../assets/dog.svg";
-// import heart from "../../assets/heart.svg";
-// import scale from "../../assets/scale.svg";
-// import bone from "../../assets/bones.svg";
 
 export default function DogDetail(props) {
   const dispatch = useDispatch();
@@ -15,9 +11,10 @@ export default function DogDetail(props) {
   console.log(id)
   useEffect(() => {
     dispatch(getDetails(id));
+    return ( dispatch(setDetailS()))
   }, [dispatch]);
-
-
+  
+ 
   return (
     <Fragment>
       {myDog ? (
@@ -49,11 +46,6 @@ export default function DogDetail(props) {
               </div>
               <div className={styles.heights}>
                 <div className={styles.imageSection}>
-                  {/* <img
-                    src={bone}
-                    alt="a tiny svg bone"
-                    className={styles.detailsSVG}
-                  /> */}
                 </div>
                 <div className={styles.infoSection}>
                   <h3>Height: </h3>
@@ -64,7 +56,7 @@ export default function DogDetail(props) {
               <br />
               <div className={styles.temperament}>
                 <div className={styles.infoSection}>
-                  {
+                {
                     <div>
                       <h3>Temperament: </h3>
                       <p>
@@ -83,7 +75,7 @@ export default function DogDetail(props) {
           </div>
         </div>
       ) : (
-        <h2>Loading...</h2>
+        <h2>LOADING ...</h2>
       )}
     </Fragment>
   );

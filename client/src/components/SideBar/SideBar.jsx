@@ -131,8 +131,8 @@ export default function SideBar() {
             <option defaultValue value="all">
               All Sources 
             </option>
-            <option value="created">Yours </option>
-            <option value="inDB">database</option>
+            <option value='created'>DataBase</option>
+            <option value="Api">Api</option>
           </select>
         </div>
         <div className={styles.filterSection}>

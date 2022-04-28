@@ -132,3 +132,11 @@ export function deleteDetails() {
     })
 }
 }
+export function setDetailS () {
+    return async function (dispatch){
+        return dispatch ({
+            type: 'SET_DETAILS',
+            Details: []
+        })
+    }
+}

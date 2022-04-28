@@ -230,7 +230,7 @@ export default function DogCreation() {
                 placeholder="12 - 15 years"
                 onChange={(e) => handleChange(e)}
               />
-            </div>
+           </div>
             <div className={styles.Section}>
               <label>Temperaments</label>
               <select onChange={(e) => handleSelect(e)} className={styles.styled_select}>
